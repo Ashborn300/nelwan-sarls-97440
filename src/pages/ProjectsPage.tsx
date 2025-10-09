@@ -4,26 +4,29 @@ import WhatsAppButton from "@/components/ui/whatsapp-button";
 import { Card, CardContent } from "@/components/ui/card";
 import SocialCTA from "@/components/sections/SocialCTA";
 
+import project1 from "@/assets/project-new-1.jpg";
+import project2 from "@/assets/project-new-2.jpg";
+import project3 from "@/assets/project-new-3.jpg";
+import project4 from "@/assets/project-new-4.jpg";
+import project5 from "@/assets/project-new-5.jpg";
+import project6 from "@/assets/project-new-6.jpg";
+import project7 from "@/assets/project-new-7.jpg";
+import project8 from "@/assets/project-new-8.jpg";
+import project9 from "@/assets/project-new-9.jpg";
+import project10 from "@/assets/project-new-10.jpg";
+
 const ProjectsPage = () => {
   const projects = [
-    {
-      title: "Infrastructure Moderne",
-      category: "Bâtiment Commercial",
-      image: "/src/assets/construction-delivered.jpg",
-      description: "Projet de construction d'infrastructure moderne à Kinshasa"
-    },
-    {
-      title: "Résidence Premium",
-      category: "Résidentiel",
-      image: "/src/assets/house-model.jpg",
-      description: "Construction de résidences haut de gamme"
-    },
-    {
-      title: "Centre Commercial",
-      category: "Commercial",
-      image: "/src/assets/construction-site.jpg",
-      description: "Développement d'un centre commercial moderne"
-    }
+    { id: 1, image: project1, alt: "Projet de construction" },
+    { id: 2, image: project2, alt: "Projet de construction" },
+    { id: 3, image: project3, alt: "Projet de construction" },
+    { id: 4, image: project4, alt: "Projet de construction" },
+    { id: 5, image: project5, alt: "Projet de construction" },
+    { id: 6, image: project6, alt: "Projet de construction" },
+    { id: 7, image: project7, alt: "Projet de construction" },
+    { id: 8, image: project8, alt: "Projet de construction" },
+    { id: 9, image: project9, alt: "Projet de construction" },
+    { id: 10, image: project10, alt: "Projet de construction" },
   ];
 
   return (
@@ -39,21 +42,20 @@ const ProjectsPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video overflow-hidden">
+            {projects.map((project) => (
+              <div 
+                key={project.id}
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="aspect-square overflow-hidden">
                   <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    src={project.image}
+                    alt={project.alt}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <span className="text-sm text-primary font-semibold">{project.category}</span>
-                  <h3 className="text-2xl font-bold mt-2 mb-3">{project.title}</h3>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             ))}
           </div>
         </section>

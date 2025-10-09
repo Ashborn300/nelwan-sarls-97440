@@ -1,20 +1,26 @@
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
-import project7 from "@/assets/project-7.jpg";
+import project1 from "@/assets/project-new-1.jpg";
+import project2 from "@/assets/project-new-2.jpg";
+import project3 from "@/assets/project-new-3.jpg";
+import project4 from "@/assets/project-new-4.jpg";
+import project5 from "@/assets/project-new-5.jpg";
+import project6 from "@/assets/project-new-6.jpg";
+import project7 from "@/assets/project-new-7.jpg";
+import project8 from "@/assets/project-new-8.jpg";
+import project9 from "@/assets/project-new-9.jpg";
+import project10 from "@/assets/project-new-10.jpg";
 
 const Projects = () => {
   const projects = [
-    { id: 1, image: project1, alt: "Projet de construction - Ferraillage de dalle" },
-    { id: 2, image: project2, alt: "Projet de construction - Terrain de sport" },
-    { id: 3, image: project3, alt: "Projet de construction - Pavillon" },
-    { id: 4, image: project4, alt: "Projet de construction - Bâtiment résidentiel" },
-    { id: 5, image: project5, alt: "Projet de construction - Immeuble" },
-    { id: 6, image: project6, alt: "Projet de construction - Structure en acier" },
-    { id: 7, image: project7, alt: "Projet de construction - Fondations" },
+    { id: 1, image: project1, alt: "Projet de construction" },
+    { id: 2, image: project2, alt: "Projet de construction" },
+    { id: 3, image: project3, alt: "Projet de construction" },
+    { id: 4, image: project4, alt: "Projet de construction" },
+    { id: 5, image: project5, alt: "Projet de construction" },
+    { id: 6, image: project6, alt: "Projet de construction" },
+    { id: 7, image: project7, alt: "Projet de construction" },
+    { id: 8, image: project8, alt: "Projet de construction" },
+    { id: 9, image: project9, alt: "Projet de construction" },
+    { id: 10, image: project10, alt: "Projet de construction" },
   ];
 
   return (
