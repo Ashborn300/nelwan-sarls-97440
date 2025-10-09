@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import project1 from "@/assets/project-new-1.jpg";
 import project2 from "@/assets/project-new-2.jpg";
 import project3 from "@/assets/project-new-3.jpg";
@@ -71,6 +73,14 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link to="/projects">
+            <Button size="lg" className="text-lg px-8 py-6">
+              Voir plus de nos réalisations
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
