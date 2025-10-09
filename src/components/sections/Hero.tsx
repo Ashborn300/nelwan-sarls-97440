@@ -22,10 +22,10 @@ const Hero = () => {
           <div ref={heroRef} className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-gradient">NELWAN SARL</span>
+                <span className="text-gradient">NELWAN SARL</span> - Construction et Architecture à Kinshasa
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Votre partenaire de confiance pour tous vos projets de construction, 
+                Leader du BTP en RDC, NELWAN SARL est votre partenaire de confiance pour tous vos projets de construction, 
                 architecture et travaux publics à Kinshasa. Excellence, innovation et qualité depuis plus de 10 ans.
               </p>
             </div>

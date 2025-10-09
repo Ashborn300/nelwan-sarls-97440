@@ -60,11 +60,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div ref={servicesRef} className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Nos <span className="text-gradient">Services</span>
+            Services de Construction NELWAN SARL
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Une gamme complète de services pour réaliser tous vos projets de construction 
-            et d'aménagement avec expertise et professionnalisme.
+            NELWAN SARL offre une gamme complète de services de construction, architecture, travaux publics et design à Kinshasa. 
+            Expertise et professionnalisme pour tous vos projets BTP en RDC.
           </p>
         </div>
 
@@ -90,9 +90,9 @@ const Services = () => {
                 </div>
                 
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
                     {service.title}
-                  </CardTitle>
+                  </h3>
                   <CardDescription className="text-muted-foreground">
                     {service.description}
                   </CardDescription>

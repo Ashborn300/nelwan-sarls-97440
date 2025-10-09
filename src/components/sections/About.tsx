@@ -49,11 +49,12 @@ const About = () => {
           <div ref={aboutRef} className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                À propos de <span className="text-gradient">NELWAN SARL</span>
+                NELWAN SARL - Leader de la Construction à Kinshasa
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Depuis plus de 10 ans, NELWAN SARL s'impose comme un leader 
-                dans le secteur du BTP à Kinshasa et dans toute la République Démocratique du Congo.
+                Depuis plus de 10 ans, NELWAN SARL s'impose comme entreprise leader 
+                dans le secteur du BTP à Kinshasa et dans toute la République Démocratique du Congo. 
+                Spécialiste en construction, architecture et travaux publics.
               </p>
             </div>
 
