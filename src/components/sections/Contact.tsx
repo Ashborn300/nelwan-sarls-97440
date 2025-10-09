@@ -22,12 +22,6 @@ const Contact = () => {
       action: "Appeler"
     },
     {
-      icon: Mail,
-      title: "Email",
-      details: ["contact@smartbuilderrdc.cd", "devis@smartbuilderrdc.cd"],
-      action: "Envoyer un email"
-    },
-    {
       icon: Clock,
       title: "Horaires",
       details: ["Lun-Ven: 8h00 - 17h00", "Sam: 8h00 - 12h00", "Dim: Fermé"],
@@ -86,7 +80,7 @@ const Contact = () => {
                 </p>
                 <Button variant="secondary" className="w-full">
                   <Phone className="mr-2 h-4 w-4" />
-                  +243 111 222 333
+                  +(243) 819919338
                 </Button>
               </CardContent>
             </Card>
