@@ -24,6 +24,13 @@ import project17 from "@/assets/project-new-17.jpg";
 import project18 from "@/assets/project-new-18.jpg";
 import project19 from "@/assets/project-new-19.jpg";
 import project20 from "@/assets/project-new-20.jpg";
+import project21 from "@/assets/project-new-21.jpg";
+import project22 from "@/assets/project-new-22.jpg";
+import project23 from "@/assets/project-new-23.jpg";
+import project24 from "@/assets/project-new-24.jpg";
+import project25 from "@/assets/project-new-25.jpg";
+import project26 from "@/assets/project-new-26.jpg";
+import project27 from "@/assets/project-new-27.jpg";
 
 const ProjectsPage = () => {
   const projects = [
@@ -47,6 +54,13 @@ const ProjectsPage = () => {
     { id: 18, image: project18, alt: "Projet de construction" },
     { id: 19, image: project19, alt: "Projet de construction" },
     { id: 20, image: project20, alt: "Projet de construction" },
+    { id: 21, image: project21, alt: "Projet de construction" },
+    { id: 22, image: project22, alt: "Projet de construction" },
+    { id: 23, image: project23, alt: "Projet de construction" },
+    { id: 24, image: project24, alt: "Projet de construction" },
+    { id: 25, image: project25, alt: "Projet de construction" },
+    { id: 26, image: project26, alt: "Projet de construction" },
+    { id: 27, image: project27, alt: "Projet de construction" },
   ];
 
   return (
