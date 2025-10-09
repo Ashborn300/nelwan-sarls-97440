@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building, Ruler, MapPin, Palette, Box, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useScrollReveal, useScrollRevealMultiple } from "@/hooks/useScrollReveal";
 import constructionSite from "@/assets/construction-site.jpg";
 import architectWork from "@/assets/architect-work.jpg";
@@ -126,10 +127,10 @@ const Services = () => {
 
         <div className="text-center mt-16">
           <Button variant="construction" size="xl" asChild>
-            <a href="/services">
+            <Link to="/services">
               Voir tous nos services
               <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

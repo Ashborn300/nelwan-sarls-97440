@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Users, Award, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import handshake from "@/assets/handshake.jpg";
@@ -87,9 +88,9 @@ const About = () => {
             </div>
 
             <Button variant="construction" size="lg" className="w-full sm:w-auto" asChild>
-              <a href="/about">
+              <Link to="/about">
                 Découvrir notre histoire
-              </a>
+              </Link>
             </Button>
           </div>
 
