@@ -12,6 +12,7 @@ import Projects from "@/components/sections/Projects";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import SocialCTA from "@/components/sections/SocialCTA";
+import CEOSection from "@/components/sections/CEOSection";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <Vision />
         <Team />
         <TrustSection />
+        <CEOSection />
         <Testimonials />
         <Projects />
         <FAQ />
