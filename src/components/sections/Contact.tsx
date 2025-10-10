@@ -59,9 +59,15 @@ const Contact = () => {
                         {info.details.map((detail, idx) => (
                           <p key={idx} className="text-muted-foreground text-sm mb-1">{detail}</p>
                         ))}
-                        <Button variant="ghost" size="sm" className="mt-2 text-primary hover:text-primary-dark p-0">
-                          {info.action}
-                        </Button>
+                        {info.title === "Téléphone" ? (
+                          <Button variant="ghost" size="sm" className="mt-2 text-primary hover:text-primary-dark p-0" asChild>
+                            <a href="tel:+243819929338">{info.action}</a>
+                          </Button>
+                        ) : (
+                          <Button variant="ghost" size="sm" className="mt-2 text-primary hover:text-primary-dark p-0">
+                            {info.action}
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </CardContent>
@@ -78,9 +84,11 @@ const Contact = () => {
                 <p className="text-primary-foreground/90 text-sm mb-4">
                   Pour les urgences techniques ou interventions d'urgence :
                 </p>
-                <Button variant="secondary" className="w-full">
-                  <Phone className="mr-2 h-4 w-4" />
-                  +(243) 819919338
+                <Button variant="secondary" className="w-full" asChild>
+                  <a href="tel:+243819929338">
+                    <Phone className="mr-2 h-4 w-4" />
+                    +(243) 819919338
+                  </a>
                 </Button>
               </CardContent>
             </Card>
